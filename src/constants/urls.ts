@@ -1,3 +1,3 @@
 export const urls = {
-    clientUrl: 'https://luddoc-institute.com'
+    clientUrl: 'https://ategoschool.com'
 }
