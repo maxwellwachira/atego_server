@@ -27,6 +27,8 @@ import mpesaRoutes from "./src/mpesa/mpesaRoutes";
 import topicRoutes from "./src/lms/topics/topicRoutes";
 //Lesson
 import lessonRoutes from "./src/lms/lessons/lessonRoutes";
+//Newsletter
+import newletterRoutes from "./src/newsletter/newsletterRoutes";
 
 dotenv.config();
 
@@ -59,7 +61,7 @@ app.use('/enrolment', enrolmentRoutes);
 app.use('/daraja', mpesaRoutes);
 app.use('/topic', topicRoutes);
 app.use('/lesson', lessonRoutes);
-
+app.use('/newsletter', newletterRoutes);
 
 app.listen(port,() => {
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
