@@ -29,6 +29,8 @@ import topicRoutes from "./src/lms/topics/topicRoutes";
 import lessonRoutes from "./src/lms/lessons/lessonRoutes";
 //Newsletter
 import newletterRoutes from "./src/newsletter/newsletterRoutes";
+//PesaPal
+import pesapalRoutes from "./src/pesapal/pesapalRoutes";
 
 dotenv.config();
 
@@ -62,6 +64,7 @@ app.use('/daraja', mpesaRoutes);
 app.use('/topic', topicRoutes);
 app.use('/lesson', lessonRoutes);
 app.use('/newsletter', newletterRoutes);
+app.use('/pesapal', pesapalRoutes);
 
 app.listen(port,() => {
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
